@@ -1,0 +1,70 @@
+/* En un comercial de venta de llantas de vehículos de la ciudad de Loja, se 
+hace un descuento del 10% si el cliente tiene pide un juego de llantas para
+un vehículo tipo "auto", del 20% si el cliente pide un juego de llantas para
+un vehículo tipo "camioneta", del 30% el cliente pide un juego de llantas 
+para un vehículo tipo "bus". Elaborar un solución que pida como datos de 
+entrada el tipo de vehículo y el valor del juego de llantas y el número de 
+juegos de llantas para el vehículo. Y luego calcule e imprima el subtotal
+por pagar y el total por pagar.*/
+
+-------Miniespecificacion------------
+
+1.Inicio
+
+//declaro las variables 
+
+2.modelo, d[0,n]
+3.valor_total, d[0,n]
+4.valor_llantas, d[0,n]
+5.numero i,[0,n]
+6.tipo_vehiculo x(20)[(a-z),(BS),(A-Z)]
+7.subtotal, d[0,n]
+8.descuento1,d[0,n]
+9.descuento2,d[0,n]
+10.descuento3,d[0,n]
+11.porcentaje1 ,d[0,n] <--- 10
+12.porcentaje2 ,d[0,n] <--- 20
+13.porcentaje3 ,d[0,n] <--- 30
+
+
+//pido datos por teclado
+
+14.Escribir "Ingrese el modelo de vehículo que poseé"
+15.Leer modelo
+
+16.Escribir "Ingrese el valor del juego de llantas"
+17.Leer valor_llantas
+
+18.Escribir "Ingrese el número de juegos de llantas a comprar"
+19.Leer numero
+
+//proceso
+
+20.subtotal <-- valor_llantas * numero
+21.Si  tipo_vehiculo == "Auto" entonces,
+22.	descuento1 <-- (subtotal * porcentaje1)/100
+ 	// subtotal    ---  100		
+	//     x       ---   10
+23.	valor_total <-- (subtotal - descuento1)
+
+24.De lo contrario, Si  tipo_vehiculo == "Camioneta" , entonces
+25.	descuento2 <-- (subtotal * porcentaje2)/100
+  	// subtotal    ---  100
+	//   x         ---   20
+26.valor_total <-- (subtotal - descuento2)
+
+
+27.De lo contrario, Si  tipo_vehiculo == "bus" , entonces
+28.	descuento3 <-- (subtotal * porcentaje3)/100
+	//subtotal    ---  100
+	//  x         ---   30
+29.	valor_total <-- (subtotal - descuento3)
+
+30.Fin si
+31.Fin si
+32.Fin si
+
+33.Escribir " El subTotal a pagar:" + subtotal
+34.Escribir"El total a pagar es: " + valor_total
+
+35.Fin

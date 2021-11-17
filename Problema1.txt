@@ -1,0 +1,68 @@
+/* Elaborar un algoritmo y una miniespecificación:
+En un restaurante de la ciudad de Loja, se hace un descuento del 5% si el 
+cliente tiene una edad mayor a cero y menor o igual a 20, del 10% si el 
+cliente tiene una edad mayor a 20 y menor o igual 30 años, del 15% si la edad
+es mayor 30 años. 
+Elaborar un solución que pida como datos de entrada la edad  y el valor del 
+plato (un cliente solo pide un plato) y luego calcule e imprima el subtotal 
+por pagar y el total por pagar. */
+
+
+------Miniespecificación-------
+
+1. Inicio
+
+// declarar las variables
+
+2. edad, i[0,n]
+3. plato, i[0,1] <-- 1
+4. valor_plato, d[0,n]
+5. porcentaje1, d[0,n] <-- 5
+6. porcentaje2, d[0,n] <-- 10
+7. porcentaje3, d[0,n] <-- 15
+8. descuento1, d[0,n]
+9. descuento2, d[0,n]
+10.descuento3, d[0,n]
+11.subtotal
+12.total
+
+// pido datos por teclado 
+
+13. Escribir "Ingresar edad del cliente"
+14. Leer edad
+
+15. Escribir "Ingresar valor del plato"
+16. Leer valor_plato
+
+//proceso
+
+17. subtotal <-- valor_plato * plato
+
+18. Si edad > 0 && <= 20 entonces
+	// valor plato <-- 100
+	// porcentaje1 <-- 5
+19.	descuento1 = ( valor_plato * porcentaje1) / 100
+20. 	total <-- subtotal - descuento1
+
+21. De lo contrario Si edad > 20 && <= 30 entonces
+	// valor plato <-- 100
+	// porcentaje2 <-- 10
+22. 	descuento2 = ( valor_plato * porcentaje2) / 100
+23. 	total <-- subtotal - descuento1
+
+24. De lo contrario Si edad > 30 entonces
+	// valor plato <-- 100
+	// porcentaje3 <-- 15
+25. 	descuento3 = ( valor_plato * porcentaje3) / 100
+26. 	total <-- subtotal - descuento3
+
+27. Fin si
+28. Fin si 
+29. Fin si
+
+//salida
+
+30. Escribir "El subtotal es: " + subtotal
+31. Escribir "El valor total a pagar es: " + total
+
+32. Fin

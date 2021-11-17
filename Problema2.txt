@@ -1,30 +1,11 @@
-----Algoritmo----
-
-1. Inicio 
-
-2. Se pregunta la edad del usuario 
-3. Se pregunta el valor del libro que desea comprar
-4. Si la edad del usuario es mayor a 0 y menor a 20, se realizara el 5 
-   porciento de descuento, es decir multiplicamos el porcentaje por el
-   subtotal y se lo divide para 100 y obtenemos la variable del descuento, 
-   despues de efectuar la operacion, al descuento obtenido le restamos el
-   subtotal
-  
-5. Si la edad del usuario es mayor o igual a 20 y menor a 40, se realizara el 12 
-   porciento de descuento, es decir multiplicamos el porcentaje por el subtotal 
-   y se lo divide para 100 y obtenemos la variable del descuento, despues de 
-   efectuar la operacion, al descuento obtenido le restamos el subtotal  
-
-6. Si la edad del usuario es mayor o igual a 40, se realizara el 40 porciento de 
-   descuento, es decir multiplicamos el porcentaje por el subtotal y se lo divide 
-   para 100 y obtenemos la variable del descuento, despues de efectuar la operacion,
-   al descuento obtenido le restamos el subtotal   
-
-7. Se muestra en pantalla el subtotal 
-8. Se muestra en pantalla el total
- 
-9. Fin 
-
+/*En una librería de la ciudad de Loja, se hace un descuento del
+5% si el cliente tiene una edad mayor a cero y menor 20, del 12%
+si el cliente tiene una edad mayor o igual a 20 y menor 40 años,
+del 20% si la edad es mayor o igual a 40 años. 
+Elaborar un solución que pida como datos de entrada la edad del
+comprador y el valor del libro (un cliente solo pide un libro) y
+luego calcule e imprima el subtotal por pagar y el total por 
+pagar.*/
 
 
 ----miniespecificacion-----
