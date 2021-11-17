@@ -1,0 +1,81 @@
+----Algoritmo----
+
+1. Inicio 
+
+2. Se pregunta la edad del usuario 
+3. Se pregunta el valor del libro que desea comprar
+4. Si la edad del usuario es mayor a 0 y menor a 20, se realizara el 5 
+   porciento de descuento, es decir multiplicamos el porcentaje por el
+   subtotal y se lo divide para 100 y obtenemos la variable del descuento, 
+   despues de efectuar la operacion, al descuento obtenido le restamos el
+   subtotal
+  
+5. Si la edad del usuario es mayor o igual a 20 y menor a 40, se realizara el 12 
+   porciento de descuento, es decir multiplicamos el porcentaje por el subtotal 
+   y se lo divide para 100 y obtenemos la variable del descuento, despues de 
+   efectuar la operacion, al descuento obtenido le restamos el subtotal  
+
+6. Si la edad del usuario es mayor o igual a 40, se realizara el 40 porciento de 
+   descuento, es decir multiplicamos el porcentaje por el subtotal y se lo divide 
+   para 100 y obtenemos la variable del descuento, despues de efectuar la operacion,
+   al descuento obtenido le restamos el subtotal   
+
+7. Se muestra en pantalla el subtotal 
+8. Se muestra en pantalla el total
+ 
+9. Fin 
+
+
+
+----miniespecificacion-----
+
+1.Inicio
+
+//declaro las variables 
+
+2. porcentaje1, d[0,n] <-- 5
+3. porcentaje2, d[0,n] <-- 12
+4. porcentaje3, d[0,n] <-- 20
+5. descuento1, d[0,n]
+6. descuento2, d[0,n]
+7. descuento3, d[0,n]
+8. edad, i[0,n]
+9. total, d[0,n]
+10.subtotal, d[0,n]
+
+//pido datos por teclado
+
+11. Escribir "Ingrese su edad"
+12. Lea edad
+
+13. Escribir "Ingrese el valor del libro"
+14. Lea subtotal
+
+//proceso
+
+15. Si edad > 0 && < 20 entonces
+   	//vt ----100
+        //x ----- 5
+16.	descuento1 <-- (porcentaje1 * subtotal)/100
+17.	total <-- subtotal- descuento1
+
+18.	De lo contrario Si edad >=20 && < 40
+	//vt ----100
+        //x ----- 12
+19.	descuento2 <-- (porcentaje2 * subtotal)/100
+20.	total <-- subtotal - descuento2
+
+21.	De lo contrario Si edad >=40
+22.	descuento3 <-- (porcentaje3 * subtotal)/100
+23.	total <-- subtotal - descuento3
+
+24. 	Fin si 
+25.	Fin si 
+26. Fin si
+
+// salida
+
+27. Escribir "El subtotal es: " + subtotal 
+28. Escribir "El total a pagar es: " + total
+
+29. Fin
